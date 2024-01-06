@@ -140,33 +140,77 @@ Allows the user to manually refresh the calendar embed for 1 queue.
 
 This extension logs attendance hours and help session history to a google sheet you provide. For each server, this extension will create 2 google sheet worksheets:
 
-`<Your Server Name> Attendance Logs`
+### `<Your Server Name> Attendance Logs`
 
-Tracks attendance of each staff member with the following information
+Tracks attendance of each staff member.
 
-- **Helper Username** - The discord user name of the helper
-- **Discord ID** - The discord id of the helper
-- **Time In** - When the helper started helping by using `/start`
-- **Time Out** - When the helper stopped helping by using `/stop`
-- **Helped Students** - The names of the students that received help
-- **Session Time (ms)** - How much time elapsed between `/start` and `/stop` in milliseconds.
-- **Active Time (ms)** - How much time was the helper actually helping students in a voice channel. This is tracked by recording the time a student stayed in a voice channel.
-- **Number of Students Helped** The total number of students helped, synced with **Helped Students**.
+=== **Column Definitions**
 
-`<Your Server Name> Help Session Logs`
+Helper Username
+:   The discord username of the helper
+
+Discord ID
+:   The discord id of the helper
+
+Time In
+:   When the helper started helping by using `/start`
+
+Time Out
+:   When the helper started helping by using `/stop`
+
+Helped Students
+:   The names of the students that received help
+
+Session Time (ms)
+:   How much time elapsed between `/start` and `/stop` in milliseconds.
+
+Active Time (ms)
+:   How much time was the helper actually helping students in a voice channel. This is tracked by recording the time a student stayed in a voice channel.
+
+Number of Students Helped
+:   The total number of students helped, synced with *Helped Students*.
+
+===
+
+### `<Your Server Name> Help Session Logs`
 
 Tracks how many students were being helped on your server.
 
-- Student Username
-- Student Discord ID
-- Helper Username
-- Helper Discord ID
-- **Session Start** - When did the student join the voice channel.
-- **Session End** - When did the student leave the voice channel
-- **Wait Start** - When did the student started waiting.
-- **Queue Name** - Which queue did the student get help from.
-- **Wait Time (ms)** - How long did the student wait before getting dequeued.
-- **Session Time (ms)** - How long were the student in the voice channel getting help.
+=== **Column Definitions**
+
+Student Username
+:   The student's discord username
+
+Student Discord ID
+:   The student's discord id
+
+Helper Username
+:   The helper's discord username
+
+Helper Discord ID
+:   The helper's discord id
+
+Session Start
+:   Time when the student joined the voice channel
+
+Session End
+:   Time when the student left the voice channel
+
+Wait Start
+:   Time when the student joined the queue and started waiting.
+
+Queue Name
+:   The queue that the student received help from
+
+Wait Time (ms)
+:   How long the student waited before getting dequeued
+
+Session Time (ms)
+:   How long were the student in the voice channel getting help
+
+===
+
+---
 
 ### `/stats`
 
