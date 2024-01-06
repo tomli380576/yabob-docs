@@ -1,2 +1,2 @@
 # yabob-docs
- Dzocumentation website for YABOB
+ Documentation website for YABOB

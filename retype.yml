@@ -1,0 +1,11 @@
+input: .
+output: .retype
+# url: # Add your website address here
+branding:
+  title: Yet Another Better Office Hour Bot
+  label: Docs
+links:
+- text: Repository
+  link: https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
