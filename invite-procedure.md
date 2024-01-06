@@ -1,5 +1,6 @@
 ---
 icon: sparkle-fill
+order: 100
 ---
 
 # Invite Procedure
