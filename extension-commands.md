@@ -2,7 +2,7 @@
 
 Updated Sept.24, 2023
 
-# What are YABOB Extensions?
+## What are YABOB Extensions?
 
 Since the beginning of YABOB v4.0, we switched over to a new implementation that separates base YABOB and YABOB extensions. This has enabled YABOB to have significantly better performance and allows us to develop new features more quickly.
 
@@ -22,9 +22,9 @@ This extension reads from a google calendar you provide and manages the `Upcomin
 
 Fetches from the calendar and displays upcoming office hour sessions.
 
-+++Access Level
++++ Access Level
 
-[!badge text="Student" variant="success" size="l"]
+[!badge text="Student" variant="success"]
 
 +++ Throws
 
@@ -48,9 +48,7 @@ Generates a parsable calendar summary string for ALL the queues this user is app
 
 +++ Access Level
 
-[!badge variant="danger" text="Bot Admin" size="l"]
-
-[!badge variant="warning" text="Staff" size="l"]
+[!badge variant="warning" text="Staff"]
 
 +++ Throws
 
@@ -82,9 +80,7 @@ Generates a calendar summary string that is guaranteed to be recognized by this 
 
 +++ Access Level
 
-[!badge variant="danger" text="Bot Admin" size="l"]
-
-[!badge variant="warning" text="Staff" size="l"]
+[!badge variant="warning" text="Staff"]
 
 +++ Options
 
@@ -123,7 +119,7 @@ Allows the user to manually refresh the calendar embed for 1 queue.
 
 +++ Access Level
 
-[!badge text="Everyone" size="l"]
+[!badge text="Everyone"]
 
 +++ Throws
 
@@ -195,7 +191,7 @@ Returns an embed showing the statistic of the entire server. The stats are the s
 
 +++ Access Level
 
-[!badge text="Everyone" size="l"]
+[!badge text="Everyone"]
 
 +++ Throws
 
