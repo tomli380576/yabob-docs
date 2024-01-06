@@ -1,11 +1,14 @@
 input: .
 output: .retype
-# url: # Add your website address here
+url: https://tomli380576.github.io/yabob-docs/
 branding:
-  title: Yet Another Better Office Hour Bot
+  # title: Yet Another Better Office Hour Bot
+  logo: static/logo.svg
   label: Docs
 links:
 - text: Repository
   link: https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+exclude:
+  - "README.md"

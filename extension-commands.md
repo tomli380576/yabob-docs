@@ -1,3 +1,7 @@
+---
+icon: command-palette
+---
+
 # Built-in Extension Commands
 
 Updated Sept.24, 2023

@@ -1,3 +1,7 @@
+---
+icon: command-palette
+---
+
 # Built-in Commands
 
 Updated on Sep.24 2023
@@ -9,8 +13,7 @@ This page covers all the commands of base YABOB. For extension commands, see the
 They have been moved under `/settings`
 !!!
 
-
-### Format
+=== :icon-note: **Format**
 
 **Title**: Command name.
 
@@ -31,6 +34,7 @@ They have been moved under `/settings`
 
 - These errors are expected to happen, and YABOB will reply back to the user with the error. YABOB will not modify any internal states if it rejects the command.
 
+===
 
 ## Command List
 

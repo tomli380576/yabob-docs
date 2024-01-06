@@ -1,7 +1,13 @@
+---
+icon: sparkle-fill
+---
+
 # Invite Procedure
 
 !!!warning
+
 This invite procedure applies to YABOB v4.3 and above.
+
 !!!
 
 ---
