@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml.gz
+Sitemap: https://tomli380576.github.io/yabob-docs/sitemap.xml.gz
