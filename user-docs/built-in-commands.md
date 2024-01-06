@@ -6,7 +6,7 @@ icon: command-palette
 
 Updated on Sep.24 2023
 
-This page covers all the commands of base YABOB. For extension commands, see the [extension commands page](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Extension-Commands).
+This page covers all the commands of base YABOB. For extension commands, see the [extension commands page](/user-docs/extension-commands.md).
 
 
 !!! Where did some of the `/set_...` commands go?
@@ -579,7 +579,7 @@ Once the student submits this modal, all helpers of this queue will see:
 
 ### `/settings`
 
-Brings up the settings menu. See more details in the [Configuration Guide](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Configure-YABOB-Settings-For-Your-Server).
+Brings up the settings menu. See more details in the [Configuration Guide](/user-docs/settings.md).
 
 +++ Access Level
 

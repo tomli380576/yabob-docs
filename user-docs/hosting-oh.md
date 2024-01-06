@@ -41,13 +41,13 @@ Before starting office hours, staff members need to be given queue roles of the 
 
 A typical office hour session goes like this:
 
-1. [!badge variant="warning" text="Staff"] opens queues with [`/start`](/built-in-commands.md#start) and joins a voice channel.
+1. [!badge variant="warning" text="Staff"] opens queues with [`/start`](built-in-commands.md#start) and joins a voice channel.
 
 2. [!badge variant="success" text="Student"] joins the queues they need help with by pressing the [`[Join]`](built-in-commands.md#join) button or using the [`/enqueue`](built-in-commands.md#enqueue) command.
 
     [!badge variant="warning" text="Staff"] will receive a direct message from YABOB saying that a student has joined a queue.
 
-3. [!badge variant="warning" text="Staff"] uses [`/next`](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands##next) to dequeue a student.
+3. [!badge variant="warning" text="Staff"] uses [`/next`](/user-docs/built-in-commands.md#next) to dequeue a student.
 
     [!badge variant="success" text="Student"] who was dequeued receives a direct message from YABOB saying that it's their turn to join the office hour voice channel. This message also contains a link to that voice channel.
 
@@ -55,7 +55,7 @@ A typical office hour session goes like this:
 
 5. [!badge variant="success" text="Student"] leaves the voice channel after they are done receiving help.
 
-6. [!badge variant="warning" text="Staff"] uses [`/stop`](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands##next) to close the queues.
+6. [!badge variant="warning" text="Staff"] uses [`/stop`](/user-docs/built-in-commands.md#stop) to close the queues.
 
 If you are not familiar with discord voice channel features, [check out this official guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord##h_93cf0203-d5bb-4e02-b1b2-80dad445895d).
 
@@ -71,7 +71,7 @@ In addition to the protocol above, there are also more in-depth commands you can
 
 4. You can require students to be verified through some method before they are allowed to join queues. For example, you can invite another email verification bot that automatically gives new members the [!badge variant="success" text="Student"] access level role when they verify their email.
 
-5. Send a message to students after they leave the voice channel with [`/set_after_session_msg`](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands##set_after_session_msg) or through the settings menu.
+5. Let YABOB automatically send a message to students after they leave the voice channel with the [after session message](/user-docs/settings.md#after-session-message) setting.
 
 ## Advanced Usage (Students)
 

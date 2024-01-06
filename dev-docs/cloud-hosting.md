@@ -9,7 +9,7 @@ For this guide, we are going to be using AWS cloud servers. If for some reason y
 
 ## Part 0: Set up
 
-Pre-req: [Development Setup Guide](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Development-Setup-Guide)
+Pre-req: [Development Setup Guide](/dev-docs/dev-setup.md)
 
 This guide assumes you have a decent grasp of the linux command line and file system. All commands are for linux based systems, i.e. probably won't work for windows cmd.
 

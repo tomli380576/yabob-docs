@@ -335,7 +335,7 @@ where the keys are the names of your command's `commandName` or the names that a
 
 These are the objects from `SlashCommandBuilder.toJSON()`. On start up, `app.ts` will post your commands along with all the built in commands to your discord servers. Make sure your command names does NOT overlap with any of the built in ones, otherwise Discord API will refuse to post any command.
 
-The built in ones can be found in the [Built-in Commands](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands) page.
+The built in ones can be found in the [Built-in Commands](/user-docs/built-in-commands.md) page.
 
 ## Accessing External Data in Extensions
 

@@ -35,7 +35,7 @@ This invite procedure applies to YABOB v4.3 and above.
 
     ![](https://user-images.githubusercontent.com/60045212/211128723-c208ccf5-76f3-4620-ab22-b44d1cae996d.png)
 
-4.  YABOB will now ask you to set up the access level roles for your server. If you don't have any roles in the server, you can use either the `[Create New Roles]` or `[Create New Roles (@everyone is student)]` option for quick setup. You can see the full documentation [here](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Configure-YABOB-Settings-For-Your-Server#server-roles).
+4.  YABOB will now ask you to set up the access level roles for your server. If you don't have any roles in the server, you can use either the `[Create New Roles]` or `[Create New Roles (@everyone is student)]` option for quick setup. You can see the full documentation [here](/user-docs/settings.md#server-roles).
 
     ![](https://user-images.githubusercontent.com/60045212/211129036-5946fe37-5cf6-41f2-a4e7-a0ef845dd6ea.png)
 
@@ -43,10 +43,10 @@ This invite procedure applies to YABOB v4.3 and above.
 
     ![](https://user-images.githubusercontent.com/60045212/211128775-4faa109b-fddd-4a30-a688-2c9bd09a43bb.png)
 
-5.  Now you are ready to create queues! In your server, use [`/queue add`](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands#queue-add--remove-queue_name) to create some new queues.
+5.  Now you are ready to create queues! In your server, use [`/queue add`](/user-docs/built-in-commands.md#queue) to create some new queues.
 
-6.  (Optional) You can batch create office hour voice channels easily with [`/create_offices`](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands#create_offices-category_name-office_name-number_of_offices). YABOB will configure the voice channel permissions for you based on the roles you selected in step 4.
+6.  (Optional) You can batch create office hour voice channels easily with [`/create_offices`](/user-docs/built-in-commands.md#create_offices). YABOB will configure the voice channel permissions for you based on the roles you selected in step 4.
 
-7.  (Optional) You can further configure YABOB settings with the `/settings` command. Learn more about YABOB settings [here](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Configure-YABOB-Settings-For-Your-Server).
+7.  (Optional) You can further configure YABOB settings with the `/settings` command. Learn more about YABOB settings [here](/user-docs/settings.md).
 
 8.  (Optional) When you are no longer using a server for your office hours, simply delete the server itself or kick YABOB from that server.

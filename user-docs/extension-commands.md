@@ -14,9 +14,7 @@ YABOB extension commands do NOT affect base YABOB's behavior but rather listens 
 
 ### Format
 
-The format in all of the following sections will be the same as the [Built in Commands](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands) page with a new subtitle:
-
-**Side Effects**: What will happen outside of discord.
+The format in all of the following sections will be the same as the [Built in Commands](/user-docs/built-in-commands.md) page with a new tab, **Side Effects**,what will happen outside of discord.
 
 ## 📅 Session Calendar Extension
 
