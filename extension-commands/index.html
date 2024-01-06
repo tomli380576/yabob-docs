@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757841442875">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Built-in Extension Commands</title>
+    <meta name="title" content="Built-in Extension Commands">
+    <meta name="description" content="Updated Sept.24, 2023">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/extension-commands/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/extension-commands/">
+    <meta property="og:title" content="Built-in Extension Commands">
+    <meta property="og:description" content="Updated Sept.24, 2023">
+    <meta property="og:image" content="https://user-images.githubusercontent.com/60045212/212770340-beb7c3d9-ac20-469f-ba88-780cd310e45e.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/extension-commands/">
+    <meta property="twitter:title" content="Built-in Extension Commands">
+    <meta property="twitter:description" content="Updated Sept.24, 2023">
+    <meta property="twitter:image" content="https://user-images.githubusercontent.com/60045212/212770340-beb7c3d9-ac20-469f-ba88-780cd310e45e.png">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../resources/css/retype.css?v=3.5.0.757841442875" rel="stylesheet">
+
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.757841442875" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.757841442875" data-turbo-eval="false" defer></script>
+    <link href="../resources/css/katex.css?v=3.5.0" rel="stylesheet">
+    <script id="katex-js" data-cfasync="false" src="../resources/js/katex.js?v=3.5.0" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Yet Another Better Office Hour Bot</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot">Repository</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot">Repository</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="built-in-extension-commands" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#built-in-extension-commands">#</doc-anchor-trigger>
+        <span>Built-in Extension Commands</span>
+    </h1>
+</doc-anchor-target>
+<p>Updated Sept.24, 2023</p>
+<doc-anchor-target id="what-are-yabob-extensions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-are-yabob-extensions">#</doc-anchor-trigger>
+        <span>What are YABOB Extensions?</span>
+    </h2>
+</doc-anchor-target>
+<p>Since the beginning of YABOB v4.0, we switched over to a new implementation that separates base YABOB and YABOB extensions. This has enabled YABOB to have significantly better performance and allows us to develop new features more quickly.</p>
+<p>YABOB extension commands do NOT affect base YABOB&#x27;s behavior but rather listens for events happening in base YABOB and then shows different information in the #queue channel or in external resources.</p>
+<doc-anchor-target id="format">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#format">#</doc-anchor-trigger>
+        <span>Format</span>
+    </h3>
+</doc-anchor-target>
+<p>The format in all of the following sections will be the same as the <a href="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/wiki/Built-in-Commands">Built in Commands</a> page with a new subtitle:</p>
+<p><strong>Side Effects</strong>: What will happen outside of discord.</p>
+<doc-anchor-target id="session-calendar-extension">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#session-calendar-extension">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C5;</span> Session Calendar Extension</span>
+    </h2>
+</doc-anchor-target>
+<p>This extension reads from a google calendar you provide and manages the <code v-pre>Upcoming Sessions</code> embed inside queue channels to display upcoming office hours sessions. All of the following commands will affect what&#x27;s being displayed in that embed.</p>
+<doc-anchor-target id="when_next">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#when_next">#</doc-anchor-trigger>
+        <span><code v-pre>/when_next</code></span>
+    </h3>
+</doc-anchor-target>
+<p>Fetches from the calendar and displays upcoming office hour sessions.</p>
+<doc-tabs>
+<doc-tab v-cloak id="access-level">
+<template #title>Access Level</template>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Student</span>
+</span></p>
+</doc-tab>
+<doc-tab v-cloak id="throws">
+<template #title>Throws</template>
+<p>Nothing.</p>
+</doc-tab>
+<doc-tab v-cloak id="example-usage">
+<template #title>Example Usage</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">/when_next</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="make_calendar_string_all">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#make_calendar_string_all">#</doc-anchor-trigger>
+        <span><code v-pre>/make_calendar_string_all</code></span>
+    </h3>
+</doc-anchor-target>
+<p>Generates a parsable calendar summary string for ALL the queues this user is approved for. This string needs to be put inside the calendar event&#x27;s <strong>description</strong> section for the <code v-pre>Upcoming Session</code> embed in each <code v-pre>#queue</code> channel to recognize it.</p>
+<doc-tabs>
+<doc-tab v-cloak id="options">
+<template #title>Options</template>
+<p><code v-pre>calendar_name</code> Specifies the user&#x27;s name on the calendar. When this command is run, YABOB remembers the discord id of the user and maps it to <code v-pre>calendar_name</code>.</p>
+</doc-tab>
+<doc-tab v-cloak id="access-level">
+<template #title>Access Level</template>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+    <span>Staff</span>
+</span></p>
+</doc-tab>
+<doc-tab v-cloak id="throws">
+<template #title>Throws</template>
+<p>Nothing.</p>
+</doc-tab>
+<doc-tab v-cloak id="example-usage">
+<template #title>Example Usage</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">/make_calendar_string_all calendar_name=John</code></pre>
+</doc-codeblock></div>
+<p>This will return <code v-pre>YABOB_START John - class1, class2 YABOB_END</code> if John has the roles class 1 and class 2.</p>
+<p>Suppose John&#x27;s discord handle is <code v-pre>@cooljohn123</code>. If John made a google calendar event <strong>titled</strong> &quot;Remote office hours for class 1 and class 2&quot; and put &quot;Remote&quot; in the location field, the upcoming session embed will show:</p>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/212770340-beb7c3d9-ac20-469f-ba88-780cd310e45e.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/212770423-9a0f5459-aad0-4f37-8f56-c157f8e4c9b1.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>The timeStamp fields are <a href="https://gist.github.com/LeviSnoot/d9147767abeef2f770e9ddcd91eb85aa">dynamic time strings in discord</a> where you can hover over it and see the literal date and time.</p>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="make_calendar_string">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#make_calendar_string">#</doc-anchor-trigger>
+        <span><code v-pre>/make_calendar_string</code></span>
+    </h3>
+</doc-anchor-target>
+<p>Generates a calendar summary string that is guaranteed to be recognized by this extension. This string needs to be put inside the calendar event&#x27;s <strong>description</strong> section for the <code v-pre>Upcoming Session</code> embed to recognize it.</p>
+<ul>
+<li>This command is meant to handle special cases when the staff member doesn&#x27;t want to include all of their approved queues (Example: They want to host a final review session for only 1 class)</li>
+<li>For other use cases, we recommend using <doc-anchor-trigger to="#make_calendar_string_all"><code v-pre>/make_calendar_string_all</code></doc-anchor-trigger></li>
+</ul>
+<doc-tabs>
+<doc-tab v-cloak id="access-level">
+<template #title>Access Level</template>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+    <span>Staff</span>
+</span></p>
+</doc-tab>
+<doc-tab v-cloak id="options">
+<template #title>Options</template>
+<p><code v-pre>calendar_name</code> Specifies the user&#x27;s name on the calendar. When this command is run, YABOB remembers the discord id of the user and maps it to <code v-pre>calendar_name</code></p>
+<p><code v-pre>queue_name_1</code> <code v-pre>queue_name_2</code> <span class="math">\dots</span> <code v-pre>queue_name_20</code> Specifies which queues to be included in this calendar string. The specified queues will then display the calendar event upon refresh.</p>
+</doc-tab>
+<doc-tab v-cloak id="throws">
+<template #title>Throws</template>
+<p><code v-pre>CommandParseError</code></p>
+<ul>
+<li>If the user does not have the Staff role or the Bot Admin role</li>
+<li>If any of the given queues is not a valid queue category</li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="example-usage">
+<template #title>Example Usage</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">/make_calendar_string John class1 class2 ...</code></pre>
+</doc-codeblock></div>
+<p>will return <code v-pre>YABOB_START John - class1, class2 YABOB_END</code></p>
+<p>After putting this string inside the calendar events, you can press <code v-pre>Refresh Upcoming Sessions</code> to refresh the embed. Your name and the calendar title should now appear.</p>
+</doc-tab>
+<doc-tab v-cloak id="side-effect">
+<template #title>Side Effect</template>
+<p>A backup is triggered.</p>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="refresh-upcoming-sessions">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#refresh-upcoming-sessions">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F518;</span> Refresh Upcoming Sessions</span>
+    </h3>
+</doc-anchor-target>
+<img width="228" alt="Screenshot 2023-01-09 at 10 10 15 PM" src="https://user-images.githubusercontent.com/60045212/211474708-db5c4143-7229-479d-895a-a4e6232abfda.png">
+<p>Allows the user to manually refresh the calendar embed for 1 queue.</p>
+<doc-tabs>
+<doc-tab v-cloak id="access-level">
+<template #title>Access Level</template>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Everyone</span>
+</span></p>
+</doc-tab>
+<doc-tab v-cloak id="throws">
+<template #title>Throws</template>
+<p><code v-pre>CalendarConnectionError</code></p>
+<ul>
+<li>If the calendar refresh request timed out</li>
+<li>If the calendar is not accessible</li>
+</ul>
+</doc-tab>
+</doc-tabs>
+<hr>
+<doc-anchor-target id="google-sheet-logging">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#google-sheet-logging">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4CA;</span> Google Sheet Logging</span>
+    </h2>
+</doc-anchor-target>
+<p>This extension logs attendance hours and help session history to a google sheet you provide. For each server, this extension will create 2 google sheet worksheets:</p>
+<p><code v-pre>&lt;Your Server Name&gt; Attendance Logs</code></p>
+<p>Tracks attendance of each staff member with the following information</p>
+<ul>
+<li><strong>Helper Username</strong> - The discord user name of the helper</li>
+<li><strong>Discord ID</strong> - The discord id of the helper</li>
+<li><strong>Time In</strong> - When the helper started helping by using <code v-pre>/start</code></li>
+<li><strong>Time Out</strong> - When the helper stopped helping by using <code v-pre>/stop</code></li>
+<li><strong>Helped Students</strong> - The names of the students that received help</li>
+<li><strong>Session Time (ms)</strong> - How much time elapsed between <code v-pre>/start</code> and <code v-pre>/stop</code> in milliseconds.</li>
+<li><strong>Active Time (ms)</strong> - How much time was the helper actually helping students in a voice channel. This is tracked by recording the time a student stayed in a voice channel.</li>
+<li><strong>Number of Students Helped</strong> The total number of students helped, synced with <strong>Helped Students</strong>.</li>
+</ul>
+<p><code v-pre>&lt;Your Server Name&gt; Help Session Logs</code></p>
+<p>Tracks how many students were being helped on your server.</p>
+<ul>
+<li>Student Username</li>
+<li>Student Discord ID</li>
+<li>Helper Username</li>
+<li>Helper Discord ID</li>
+<li><strong>Session Start</strong> - When did the student join the voice channel.</li>
+<li><strong>Session End</strong> - When did the student leave the voice channel</li>
+<li><strong>Wait Start</strong> - When did the student started waiting.</li>
+<li><strong>Queue Name</strong> - Which queue did the student get help from.</li>
+<li><strong>Wait Time (ms)</strong> - How long did the student wait before getting dequeued.</li>
+<li><strong>Session Time (ms)</strong> - How long were the student in the voice channel getting help.</li>
+</ul>
+<doc-anchor-target id="stats">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#stats">#</doc-anchor-trigger>
+        <span><code v-pre>/stats</code></span>
+    </h3>
+</doc-anchor-target>
+<p>This command has 2 subcommands:</p>
+<p><code v-pre>/stats helper</code></p>
+<p>Returns an embed showing the statistic of a helper. The stats include:</p>
+<ul>
+<li>Help sessions</li>
+<li>Total available time</li>
+<li>Total helping time</li>
+<li>Number of student sessions</li>
+<li>Unique students helped</li>
+<li>Returning students</li>
+<li>Average session time</li>
+<li>Average wait time</li>
+</ul>
+<p><code v-pre>/stats server</code></p>
+<p>Returns an embed showing the statistic of the entire server. The stats are the same as <code v-pre>/stats helper</code>.</p>
+<doc-tabs>
+<doc-tab v-cloak id="options">
+<template #title>Options</template>
+<p><code v-pre>time_frame</code> Required Parameter. Specifies which time period should the stats come from: All Time, Past Month, or Past Week.</p>
+</doc-tab>
+<doc-tab v-cloak id="access-level">
+<template #title>Access Level</template>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Everyone</span>
+</span></p>
+</doc-tab>
+<doc-tab v-cloak id="throws">
+<template #title>Throws</template>
+<p><code v-pre>Error</code> (This will be updated with a different error)</p>
+<ul>
+<li>If there&#x27;s no <code v-pre>Help Session Logs</code> worksheet of your server.</li>
+</ul>
+</doc-tab>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../built-in-commands/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Built-​in Commands</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../invite-procedure/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Invite Procedure</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Built-in Extension Commands", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: true, tocDepth: 23 }</script>
+</body>
+</html>
