@@ -282,10 +282,7 @@ Marks the user as a helper who has temporarily stopped accepting new students. W
 If all the helpers of the same queue have used `/pause`, this queue will enter the `PAUSED` state that will stop students from joining the queue. Helpers of a `PAUSED` queue can still dequeue students. As of v4.3, ALL helpers of the same queue must use `/pause` to make the queue `PAUSED`.
 
 - The queue embed of a `PAUSED` queue will have a yellow embed instead of an aqua embed.
-  <div align='center'>
-  <img width="400" alt="Screenshot 2023-01-08 at 5 07 58 PM" src="https://user-images.githubusercontent.com/60045212/211227978-934bda64-3485-4933-80a7-5d2810a73db5.png">
-
-  </div>
+  ![](https://user-images.githubusercontent.com/60045212/211227978-934bda64-3485-4933-80a7-5d2810a73db5.png)
 
 +++
 
@@ -551,15 +548,11 @@ This command has 2 subcommands.
 
 - This modal is shown when the student uses `/enqueue` or `[Join]`
 
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 03 13 PM" src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png">
-</div>
+![](https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png)
 
 Once the student submits this modal, all helpers of this queue will see:
 
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 05 10 PM" src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png">
-</div>
+![](https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png)
 
 `/prompt_help_topic off`
 
@@ -627,9 +620,7 @@ All 3 options are required.
 
 Running this command creates the following:
 
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-06 at 7 37 57 PM" src="https://user-images.githubusercontent.com/60045212/211129591-fdc19d53-d493-4fa1-9ba4-bb22fd5665e5.png">
-</div>
+![](https://user-images.githubusercontent.com/60045212/211129591-fdc19d53-d493-4fa1-9ba4-bb22fd5665e5.png)
 
 +++
 

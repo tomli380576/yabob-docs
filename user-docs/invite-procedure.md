@@ -5,21 +5,20 @@ order: 100
 
 # Invite Procedure
 
-!!!warning
+!!!success
 
 This invite procedure applies to YABOB v4.3 and above.
-
+:::center
+[!button variant="success" text="Invite YABOB to Your Server" size="l"](https://discord.com/api/oauth2/authorize?client_id=967586305959657482&permissions=8&scope=bot)
+<p></p>
+:::
 !!!
-
----
-
-## Invite Link
-
-[!button variant="success" text="Invite YABOB to Your Server"](https://discord.com/api/oauth2/authorize?client_id=967586305959657482&permissions=8&scope=bot)
 
 ## Video Guide
 
+:::m
 [!embed](https://www.youtube.com/watch?v=e7CpJED-c7w)
+:::
 
 ## Text Guide
 

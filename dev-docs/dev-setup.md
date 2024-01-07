@@ -144,7 +144,7 @@ and git will track these files again. Ignore the changes again after updates.
 
 5. Once you are back at the *Credentials* tab, click on the account you just created $\to$ KEYS $\to$ Add Key: Create New Key $\to$ Choose JSON $\to$ It will prompt you to download your key.
 
-    <img width="800" alt="Screen Shot 2022-09-01 at 12 10 18 AM" src="https://user-images.githubusercontent.com/60045212/188524386-11b98544-2af1-4d7a-9001-8a34b13363d5.png">
+    ![](https://user-images.githubusercontent.com/60045212/188524386-11b98544-2af1-4d7a-9001-8a34b13363d5.png)
 
 6. Copy the corresponding values of this JSON file into `YABOB/src/environment/development.json`.
 
@@ -161,7 +161,7 @@ and git will track these files again. Ignore the changes again after updates.
 
 1. Still in the Google Cloud Console, go to APIs and Services $\to$ Enabled APIs & Services.
 
-    <img width="800" alt="Screen Shot 2022-09-01 at 12 17 55 AM" src="https://user-images.githubusercontent.com/60045212/188524292-21dda450-af18-4ed7-9e61-14cd309b8dad.png">
+    ![](https://user-images.githubusercontent.com/60045212/188524292-21dda450-af18-4ed7-9e61-14cd309b8dad.png)
 
 2. Click on ENABLE APIS AND SERVICES.
 

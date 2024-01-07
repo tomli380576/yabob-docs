@@ -61,10 +61,7 @@ Use the modal to put in the number of hours and minutes to wait before clearing 
 
 Queue channels will also display the timer:
 
-<div align='center'>
-<img width="450" alt="Screenshot 2022-12-19 at 5 18 19 PM" src="https://user-images.githubusercontent.com/60045212/208558810-367b51da-d425-486f-a216-8727901176bb.png">
-<p></p>
-</div>
+![](https://user-images.githubusercontent.com/60045212/208558810-367b51da-d425-486f-a216-8727901176bb.png)
 
 ---
 
@@ -72,10 +69,7 @@ Queue channels will also display the timer:
 
 This setting controls which channel should YABOB send logging messages to. The logs will look like the following:
 
-<div align='center'>
-<img width="450" alt="Screenshot 2022-12-19 at 11 16 29 PM" src="https://user-images.githubusercontent.com/60045212/208606091-8357e490-70d4-4abc-9da5-89cd6384bb6a.png">
-<p></p>
-</div>
+![](https://user-images.githubusercontent.com/60045212/208606091-8357e490-70d4-4abc-9da5-89cd6384bb6a.png)
 
 All command usages, button presses, and errors will be sent to this channel.
 
@@ -83,10 +77,7 @@ All command usages, button presses, and errors will be sent to this channel.
 
 Sometimes it could be useful to automatically send a message to the students after they finish receiving help, such as asking for feedbacks. Here's an example message:
 
-<div align='center'>
-<img width="450" alt="Screenshot 2022-12-24 at 12 43 00 AM" src="https://user-images.githubusercontent.com/60045212/209428485-94e515e2-9c21-415d-bb2c-387b536c42d8.png">
-<p></p>
-</div>
+![](https://user-images.githubusercontent.com/60045212/209428485-94e515e2-9c21-415d-bb2c-387b536c42d8.png)
 
 ### 🔘 Set After Session Message
 
@@ -113,16 +104,10 @@ Once clicked, a form will pop up asking for a calendar id and an optional public
 1. Open Google Calendar, click the 3 dots on the calendar that you want to use $\to$ click `Settings and Sharing`.
 
 2. Click `Make available to public`
-
- <div align='center'>
- <img width="450" alt="Screenshot 2023-01-09 at 10 01 08 PM" src="https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png">
- </div>
+    ![](https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png)
 
 3. Scroll down to `Integrate Calendar` and copy the string under `Calendar ID`. This is the id string of your calendar
-
- <div align='center'>
- <img width="450" alt="Screenshot 2023-01-09 at 10 02 56 PM" src="https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png">
- </div>
+    ![](https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png)
 
 Fill the calendar id field with this id.
 
@@ -140,17 +125,11 @@ YABOB will start showing students a modal that asks them what topic do they need
 
 - This modal is shown when the student uses `/enqueue` or `[Join]`
 
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 03 13 PM" src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png">
-<p></p>
-</div>
+    ![](https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png)
 
 Once the student submits this modal, all helpers of this queue will see:
 
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 05 10 PM" src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png">
-<p></p>
-</div>
+![](https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png)
 
 ### 🔘 Disable
 
@@ -166,19 +145,13 @@ Controls whether to show "fun stuff" like emojis in queue channels.
 
 Removes all emotions and the hidden cat from the queues
 
-<div align='center'>
-    <img width="400" alt="Screenshot 2023-01-08 at 5 11 04 PM" src="https://user-images.githubusercontent.com/60045212/211228074-910aefb5-d8b9-40c6-98d3-cf944a01d2d4.png">
-    <p></p>
-</div>
+![](https://user-images.githubusercontent.com/60045212/211228074-910aefb5-d8b9-40c6-98d3-cf944a01d2d4.png)
 
 ### 🔘 Disable
 
 Enables all emotions and the hidden cat from the queues
 
-<div align='center'>
-    <img width="400" alt="Screenshot 2023-01-08 at 5 11 25 PM" src="https://user-images.githubusercontent.com/60045212/211228094-98d62e9c-8a5a-4926-bcf6-ccbaa65cab51.png">
-    <p></p>
-</div>
+![](https://user-images.githubusercontent.com/60045212/211228094-98d62e9c-8a5a-4926-bcf6-ccbaa65cab51.png)
 
 ---
 
@@ -186,10 +159,7 @@ Enables all emotions and the hidden cat from the queues
 
 Controls which Google Sheet this server will be used for logging.
 
-<div align="center">
-    <img width="400" alt="Screenshot 2023-09-24 at 16 13 51" src="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/assets/60045212/68bfa8da-dc3f-4d60-ab02-401b59012445">
-    <p></p>
-</div>
+![](https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/assets/60045212/68bfa8da-dc3f-4d60-ab02-401b59012445)
 
 ### 🔘 Change Google Sheet
 
@@ -211,15 +181,17 @@ Make sure the google sheet is shared with the YABOB in your server and YABOB has
 
 You can always revoke the permission by removing yabob from the list of accounts with access or reset to the default google sheet.
 
-#### Throws
++++ Throws
 
 `GoogleSheetConnectionError`
 
 - If this google sheet is not accessible. This can happen if you did not share the google sheet with the YABOB inside your server. Don't worry, YABOB will tell you what its email address is when this error happens.
 
-#### Side Effect
++++ Side Effect
 
 No immediate side effect. The next log will be written to this new google sheet.
+
++++
 
 ### 🔘 Reset Google Sheet
 
