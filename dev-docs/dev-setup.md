@@ -9,12 +9,14 @@ order: 10
 
 Install [Node.js](https://nodejs.org/en/), select the `Long Term Support` version.
 
-## For developers
+### Before we start
 
-This guide explains how to fill the production environment variables. For development purposes the guide is the same, except fill in `YABOB/src/environment/development.json` instead of `YABOB/src/environment/production.json`
+For the rest of this guide, we will assume that you are setting up for **development use**. For production:
+- Fill in `YABOB/src/environment/production.json` instead of `YABOB/src/environment/development.json`
+- The run command is `npm run prod` instead of `npm run dev`
+- Use `npm install --production` to skip installing dev dependencies
 
 ## Step 1. Discord Developer Account, BOB App ID
-
 
 1. Make a discord server.
 
@@ -95,34 +97,20 @@ git clone https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot.
 3. Now you can run the bot with the fundamental functionalities using this command: (**Don't forget the space between the 2 dashes and `noExtensions`**)
 
     ```bash
-    npm run prod -- noExtensions=true
-    ```
-
-4. For development, fill in `src/environment/development.json`, then run this (separates your dev credentials from production credentials):
-
-    ```bash
     npm run dev -- noExtensions=true
     ```
 
-## Step 3. Setting up extensions (optional)
+## Step 4. Setting up extensions (optional)
 
-Right now you have a functioning YABOB! To make YABOB more useful and customizable, we developed the extensions feature in v4. YABOB comes with 3 built in extensions:
+Right now you have a functioning YABOB! To make YABOB more useful and customizable, we developed the extensions feature in v4. YABOB comes with 2 built in extensions:
 
 1. **Google Sheet Logging**
 
-   Utilizes Google Sheets to track:
+   Utilizes Google Sheets to track tutor/helper attendance and make sure they are following their schedules, as well as providing insights to how many help sessions are being held.
 
-   1. Tutor/helper attendance and make sure they are following their schedules.
-   2. Provides insights to how many help sessions are being held.
-    <p></p>
+2. **Session Calendar**
 
-2. **Firebase Backup**
-
-   Utilizes [Google Firebase Database](https://firebase.google.com/) to backup server data. In case the bot crashes or accidentally shut down, the most recent snapshot will be stored in firebase and ready to be restored on next startup.
-
-3. **Session Calendar**
-
-    Utilizes Google Calendar to display upcoming help sessions in the queue.
+    Utilizes Google Calendar to display upcoming help sessions in the queue so that students can easily see when the next office hour session will happen.
 
 ### Ignoring Credentials in Git
 
@@ -132,7 +120,7 @@ For development, run this command in the `YABOB` directory:
 git update-index --skip-worktree ./src/environment/*.json 
 ```
 
-This will ignore all changes in the credentials json files.
+This will ignore all changes in the credentials json files so they aren't accidentally pushed to the repository.
 
 If the file structure changes in the future and requires new commits, run this:
 
@@ -140,11 +128,7 @@ If the file structure changes in the future and requires new commits, run this:
 git update-index --no-skip-worktree ./src/environment/*.json 
 ```
 
-and Git will track these files again. Then ignore the changes after updates.
-
-### Before we start
-
-For the rest of this section, we will assume that you are setting up for **development use**. For production, fill in `YABOB/src/environment/production.json` instead of `YABOB/src/environment/development.json`
+and git will track these files again. Ignore the changes again after updates.
 
 ### Google Sheet Logging Extension Requirements
 
@@ -196,7 +180,7 @@ Now we have access to google sheets, we just need the sheet itself.
 
 2. The google sheets URL looks like this:
 
-   ```plaintext
+   ```
    https://docs.google.com/spreadsheets/d/<very long string here>/edit
    ```
    That very long string is your `YABOB_GOOGLE_SHEET_ID`.
@@ -236,20 +220,14 @@ Now we have access to google sheets, we just need the sheet itself.
     }
     ```
 
-## Final Check
+### Final Check
 
 Everything in `YABOB/src/environment/development.json` should now have a value instead of an empty string.
 
-## Step 4. Running with Extensions
+## Step 5. Running with Extensions
 
 Remove the `-- noExtension` flag from step 2.
 
 ```bash
 npm run dev
-```
-
-for production, run:
-
-```bash
-npm run prod
 ```
