@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/yabob-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757855401921">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757900978965">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,12 +32,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.757855401921" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.757900978965" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757855401921" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757900978965" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757855401921" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.757855401921" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757900978965" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.757900978965" defer></script>
     <link href="../../resources/css/katex.css?v=3.5.0" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="../../resources/js/katex.js?v=3.5.0" defer></script>
 </head>
@@ -190,13 +190,18 @@
     </h2>
 </doc-anchor-target>
 <p>Install <a href="https://nodejs.org/en/">Node.js</a>, select the <code v-pre>Long Term Support</code> version.</p>
-<doc-anchor-target id="for-developers">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#for-developers">#</doc-anchor-trigger>
-        <span>For developers</span>
-    </h2>
+<doc-anchor-target id="before-we-start">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#before-we-start">#</doc-anchor-trigger>
+        <span>Before we start</span>
+    </h3>
 </doc-anchor-target>
-<p>This guide explains how to fill the production environment variables. For development purposes the guide is the same, except fill in <code v-pre>YABOB/src/environment/development.json</code> instead of <code v-pre>YABOB/src/environment/production.json</code></p>
+<p>For the rest of this guide, we will assume that you are setting up for <strong>development use</strong>. For production:</p>
+<ul>
+<li>Fill in <code v-pre>YABOB/src/environment/production.json</code> instead of <code v-pre>YABOB/src/environment/development.json</code></li>
+<li>The run command is <code v-pre>npm run prod</code> instead of <code v-pre>npm run dev</code></li>
+<li>Use <code v-pre>npm install --production</code> to skip installing dev dependencies</li>
+</ul>
 <doc-anchor-target id="step-1-discord-developer-account-bob-app-id">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-discord-developer-account-bob-app-id">#</doc-anchor-trigger>
@@ -294,36 +299,23 @@
 </li>
 <li><p>Now you can run the bot with the fundamental functionalities using this command: (<strong>Don&#x27;t forget the space between the 2 dashes and <code v-pre>noExtensions</code></strong>)</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">npm run prod -- noExtensions=true</code></pre>
-</doc-codeblock></div>
-</li>
-<li><p>For development, fill in <code v-pre>src/environment/development.json</code>, then run this (separates your dev credentials from production credentials):</p>
-<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">npm run dev -- noExtensions=true</code></pre>
 </doc-codeblock></div>
 </li>
 </ol>
-<doc-anchor-target id="step-3-setting-up-extensions-optional">
+<doc-anchor-target id="step-4-setting-up-extensions-optional">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-3-setting-up-extensions-optional">#</doc-anchor-trigger>
-        <span>Step 3. Setting up extensions (optional)</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-setting-up-extensions-optional">#</doc-anchor-trigger>
+        <span>Step 4. Setting up extensions (optional)</span>
     </h2>
 </doc-anchor-target>
-<p>Right now you have a functioning YABOB! To make YABOB more useful and customizable, we developed the extensions feature in v4. YABOB comes with 3 built in extensions:</p>
+<p>Right now you have a functioning YABOB! To make YABOB more useful and customizable, we developed the extensions feature in v4. YABOB comes with 2 built in extensions:</p>
 <ol>
 <li><p><strong>Google Sheet Logging</strong></p>
-<p>Utilizes Google Sheets to track:</p>
-<ol>
-<li>Tutor/helper attendance and make sure they are following their schedules.</li>
-<li>Provides insights to how many help sessions are being held.</li>
-</ol>
- <p></p>
-</li>
-<li><p><strong>Firebase Backup</strong></p>
-<p>Utilizes <a href="https://firebase.google.com/">Google Firebase Database</a> to backup server data. In case the bot crashes or accidentally shut down, the most recent snapshot will be stored in firebase and ready to be restored on next startup.</p>
+<p>Utilizes Google Sheets to track tutor/helper attendance and make sure they are following their schedules, as well as providing insights to how many help sessions are being held.</p>
 </li>
 <li><p><strong>Session Calendar</strong></p>
-<p>Utilizes Google Calendar to display upcoming help sessions in the queue.</p>
+<p>Utilizes Google Calendar to display upcoming help sessions in the queue so that students can easily see when the next office hour session will happen.</p>
 </li>
 </ol>
 <doc-anchor-target id="ignoring-credentials-in-git">
@@ -336,19 +328,12 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">git update-index --skip-worktree ./src/environment/*.json </code></pre>
 </doc-codeblock></div>
-<p>This will ignore all changes in the credentials json files.</p>
+<p>This will ignore all changes in the credentials json files so they aren&#x27;t accidentally pushed to the repository.</p>
 <p>If the file structure changes in the future and requires new commits, run this:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">git update-index --no-skip-worktree ./src/environment/*.json </code></pre>
 </doc-codeblock></div>
-<p>and Git will track these files again. Then ignore the changes after updates.</p>
-<doc-anchor-target id="before-we-start">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#before-we-start">#</doc-anchor-trigger>
-        <span>Before we start</span>
-    </h3>
-</doc-anchor-target>
-<p>For the rest of this section, we will assume that you are setting up for <strong>development use</strong>. For production, fill in <code v-pre>YABOB/src/environment/production.json</code> instead of <code v-pre>YABOB/src/environment/development.json</code></p>
+<p>and git will track these files again. Ignore the changes again after updates.</p>
 <doc-anchor-target id="google-sheet-logging-extension-requirements">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#google-sheet-logging-extension-requirements">#</doc-anchor-trigger>
@@ -416,7 +401,6 @@
 </li>
 <li><p>The google sheets URL looks like this:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">plaintext</div>
 <pre class="language-none"><code v-pre class="language-none">https://docs.google.com/spreadsheets/d/&lt;very long string here&gt;/edit</code></pre>
 </doc-codeblock></div>
 <p>That very long string is your <code v-pre>YABOB_GOOGLE_SHEET_ID</code>.</p>
@@ -466,25 +450,21 @@
 </li>
 </ol>
 <doc-anchor-target id="final-check">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#final-check">#</doc-anchor-trigger>
         <span>Final Check</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>Everything in <code v-pre>YABOB/src/environment/development.json</code> should now have a value instead of an empty string.</p>
-<doc-anchor-target id="step-4-running-with-extensions">
+<doc-anchor-target id="step-5-running-with-extensions">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-running-with-extensions">#</doc-anchor-trigger>
-        <span>Step 4. Running with Extensions</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-5-running-with-extensions">#</doc-anchor-trigger>
+        <span>Step 5. Running with Extensions</span>
     </h2>
 </doc-anchor-target>
 <p>Remove the <code v-pre>-- noExtension</code> flag from step 2.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">npm run dev</code></pre>
-</doc-codeblock></div>
-<p>for production, run:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">npm run prod</code></pre>
 </doc-codeblock></div>
 
                                 
