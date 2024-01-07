@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/yabob-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757900978965">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757904552216">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -22,23 +22,42 @@
     <meta property="og:url" content="https://tomli380576.github.io/yabob-docs/user-docs/settings/">
     <meta property="og:title" content="Configure YABOB Settings">
     <meta property="og:description" content="Starting with version 4.3, YABOB will post a /settings command to your sever as the entry point for all server related configurations such as:">
+    <meta property="og:image" content="https://user-images.githubusercontent.com/60045212/208558810-367b51da-d425-486f-a216-8727901176bb.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://tomli380576.github.io/yabob-docs/user-docs/settings/">
     <meta property="twitter:title" content="Configure YABOB Settings">
     <meta property="twitter:description" content="Starting with version 4.3, YABOB will post a /settings command to your sever as the entry point for all server related configurations such as:">
+    <meta property="twitter:image" content="https://user-images.githubusercontent.com/60045212/208558810-367b51da-d425-486f-a216-8727901176bb.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.757900978965" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.757904552216" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757900978965" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757904552216" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757900978965" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757904552216" data-turbo-eval="false" defer></script>
     <link href="../../resources/css/katex.css?v=3.5.0" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="../../resources/js/katex.js?v=3.5.0" defer></script>
+
+    <style>
+      img {
+        max-width: 500px;
+      }
+      .tab-content > p:last-child {
+        margin-bottom: 0;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+      .with-shadow {
+        box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -292,10 +311,11 @@
 <li>If there&#x27;s a running timer when this command is used, the old timer will be discarded and a new timer with the new timeout will be started.</li>
 </ul>
 <p>Queue channels will also display the timer:</p>
-<div align='center'>
-<img width="450" alt="Screenshot 2022-12-19 at 5 18 19 PM" src="https://user-images.githubusercontent.com/60045212/208558810-367b51da-d425-486f-a216-8727901176bb.png">
-<p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/208558810-367b51da-d425-486f-a216-8727901176bb.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <hr>
 <doc-anchor-target id="logging-channel">
     <h2>
@@ -304,10 +324,11 @@
     </h2>
 </doc-anchor-target>
 <p>This setting controls which channel should YABOB send logging messages to. The logs will look like the following:</p>
-<div align='center'>
-<img width="450" alt="Screenshot 2022-12-19 at 11 16 29 PM" src="https://user-images.githubusercontent.com/60045212/208606091-8357e490-70d4-4abc-9da5-89cd6384bb6a.png">
-<p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/208606091-8357e490-70d4-4abc-9da5-89cd6384bb6a.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>All command usages, button presses, and errors will be sent to this channel.</p>
 <doc-anchor-target id="after-session-message">
     <h2>
@@ -316,10 +337,11 @@
     </h2>
 </doc-anchor-target>
 <p>Sometimes it could be useful to automatically send a message to the students after they finish receiving help, such as asking for feedbacks. Here&#x27;s an example message:</p>
-<div align='center'>
-<img width="450" alt="Screenshot 2022-12-24 at 12 43 00 AM" src="https://user-images.githubusercontent.com/60045212/209428485-94e515e2-9c21-415d-bb2c-387b536c42d8.png">
-<p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/209428485-94e515e2-9c21-415d-bb2c-387b536c42d8.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="set-after-session-message">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#set-after-session-message">#</doc-anchor-trigger>
@@ -359,18 +381,13 @@
 <ol>
 <li><p>Open Google Calendar, click the 3 dots on the calendar that you want to use <span class="math">\to</span> click <code v-pre>Settings and Sharing</code>.</p>
 </li>
-<li><p>Click <code v-pre>Make available to public</code></p>
+<li><p>Click <code v-pre>Make available to public</code>
+<img src="https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png" alt="" /></p>
+</li>
+<li><p>Scroll down to <code v-pre>Integrate Calendar</code> and copy the string under <code v-pre>Calendar ID</code>. This is the id string of your calendar
+<img src="https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png" alt="" /></p>
 </li>
 </ol>
- <div align='center'>
- <img width="450" alt="Screenshot 2023-01-09 at 10 01 08 PM" src="https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png">
- </div>
-<ol start="3">
-<li>Scroll down to <code v-pre>Integrate Calendar</code> and copy the string under <code v-pre>Calendar ID</code>. This is the id string of your calendar</li>
-</ol>
- <div align='center'>
- <img width="450" alt="Screenshot 2023-01-09 at 10 02 56 PM" src="https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png">
- </div>
 <p>Fill the calendar id field with this id.</p>
 <p>If you wish to have a different calendar website than the default google calendar embed, fill in the public embed URL as well (URL must be complete, i.e include https). Otherwise leave the field empty.</p>
 <hr>
@@ -389,17 +406,16 @@
 </doc-anchor-target>
 <p>YABOB will start showing students a modal that asks them what topic do they need help with. Students are not required to submit the modal, and they will still be queued if they don&#x27;t submit.</p>
 <ul>
-<li>This modal is shown when the student uses <code v-pre>/enqueue</code> or <code v-pre>[Join]</code></li>
+<li><p>This modal is shown when the student uses <code v-pre>/enqueue</code> or <code v-pre>[Join]</code></p>
+<p><img src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png" alt="" /></p>
+</li>
 </ul>
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 03 13 PM" src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png">
-<p></p>
-</div>
 <p>Once the student submits this modal, all helpers of this queue will see:</p>
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 05 10 PM" src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png">
-<p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="disable">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#disable">#</doc-anchor-trigger>
@@ -422,10 +438,11 @@
     </h3>
 </doc-anchor-target>
 <p>Removes all emotions and the hidden cat from the queues</p>
-<div align='center'>
-    <img width="400" alt="Screenshot 2023-01-08 at 5 11 04 PM" src="https://user-images.githubusercontent.com/60045212/211228074-910aefb5-d8b9-40c6-98d3-cf944a01d2d4.png">
-    <p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211228074-910aefb5-d8b9-40c6-98d3-cf944a01d2d4.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="disable">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#disable">#</doc-anchor-trigger>
@@ -433,10 +450,11 @@
     </h3>
 </doc-anchor-target>
 <p>Enables all emotions and the hidden cat from the queues</p>
-<div align='center'>
-    <img width="400" alt="Screenshot 2023-01-08 at 5 11 25 PM" src="https://user-images.githubusercontent.com/60045212/211228094-98d62e9c-8a5a-4926-bcf6-ccbaa65cab51.png">
-    <p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211228094-98d62e9c-8a5a-4926-bcf6-ccbaa65cab51.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <hr>
 <doc-anchor-target id="google-sheet-settings">
     <h2>
@@ -445,10 +463,11 @@
     </h2>
 </doc-anchor-target>
 <p>Controls which Google Sheet this server will be used for logging.</p>
-<div align="center">
-    <img width="400" alt="Screenshot 2023-09-24 at 16 13 51" src="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/assets/60045212/68bfa8da-dc3f-4d60-ab02-401b59012445">
-    <p></p>
-</div>
+<p><figure class="content-center">
+    <img src="https://github.com/KaoushikMurugan/yet-another-better-office-hour-bot/assets/60045212/68bfa8da-dc3f-4d60-ab02-401b59012445" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="change-google-sheet">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#change-google-sheet">#</doc-anchor-trigger>
@@ -475,23 +494,19 @@
 </doc-anchor-target>
 <p>Make sure the google sheet is shared with the YABOB in your server and YABOB has EDIT permission. You can find YABOB&#x27;s email in the google sheet settings menu.</p>
 <p>You can always revoke the permission by removing yabob from the list of accounts with access or reset to the default google sheet.</p>
-<doc-anchor-target id="throws">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#throws">#</doc-anchor-trigger>
-        <span>Throws</span>
-    </h4>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="throws">
+<template #title>Throws</template>
 <p><code v-pre>GoogleSheetConnectionError</code></p>
 <ul>
 <li>If this google sheet is not accessible. This can happen if you did not share the google sheet with the YABOB inside your server. Don&#x27;t worry, YABOB will tell you what its email address is when this error happens.</li>
 </ul>
-<doc-anchor-target id="side-effect">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#side-effect">#</doc-anchor-trigger>
-        <span>Side Effect</span>
-    </h4>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="side-effect">
+<template #title>Side Effect</template>
 <p>No immediate side effect. The next log will be written to this new google sheet.</p>
+</doc-tab>
+</doc-tabs>
 <doc-anchor-target id="reset-google-sheet">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#reset-google-sheet">#</doc-anchor-trigger>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/yabob-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757900978965">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757904552216">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,12 +34,29 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.757900978965" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.757904552216" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757900978965" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.757904552216" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757900978965" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.757900978965" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.757904552216" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.757904552216" defer></script>
+
+    <style>
+      img {
+        max-width: 500px;
+      }
+      .tab-content > p:last-child {
+        margin-bottom: 0;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+      .with-shadow {
+        box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -537,11 +554,8 @@
 <template #title>Note: <code v-pre>PAUSED</code> queues</template>
 <p>If all the helpers of the same queue have used <code v-pre>/pause</code>, this queue will enter the <code v-pre>PAUSED</code> state that will stop students from joining the queue. Helpers of a <code v-pre>PAUSED</code> queue can still dequeue students. As of v4.3, ALL helpers of the same queue must use <code v-pre>/pause</code> to make the queue <code v-pre>PAUSED</code>.</p>
 <ul>
-<li><p>The queue embed of a <code v-pre>PAUSED</code> queue will have a yellow embed instead of an aqua embed.</p>
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 07 58 PM" src="https://user-images.githubusercontent.com/60045212/211227978-934bda64-3485-4933-80a7-5d2810a73db5.png">
-</div>
-</li>
+<li>The queue embed of a <code v-pre>PAUSED</code> queue will have a yellow embed instead of an aqua embed.
+<img src="https://user-images.githubusercontent.com/60045212/211227978-934bda64-3485-4933-80a7-5d2810a73db5.png" alt="" /></li>
 </ul>
 </doc-tab>
 </doc-tabs>
@@ -881,13 +895,17 @@
 <li><p>This modal is shown when the student uses <code v-pre>/enqueue</code> or <code v-pre>[Join]</code></p>
 </li>
 </ul>
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 03 13 PM" src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png">
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>Once the student submits this modal, all helpers of this queue will see:</p>
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-08 at 5 05 10 PM" src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png">
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p><code v-pre>/prompt_help_topic off</code></p>
 <ul>
 <li>YABOB will not show students the Help Topic modal. Students will be directly enqueued when they use <code v-pre>/enqueue</code> or the <code v-pre>[Join]</code> button.</li>
@@ -965,9 +983,11 @@
 <pre class="language-bash"><code v-pre class="language-bash">/create_offices &quot;Offices Hour Voice Channels&quot; &quot;office&quot; 5</code></pre>
 </doc-codeblock></div>
 <p>Running this command creates the following:</p>
-<div align='center'>
-<img width="400" alt="Screenshot 2023-01-06 at 7 37 57 PM" src="https://user-images.githubusercontent.com/60045212/211129591-fdc19d53-d493-4fa1-9ba4-bb22fd5665e5.png">
-</div>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211129591-fdc19d53-d493-4fa1-9ba4-bb22fd5665e5.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 </doc-tab>
 </doc-tabs>
 <doc-anchor-target id="help">
