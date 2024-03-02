@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/yabob-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.759975037447">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762736286994">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.759975037447" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.762736286994" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.759975037447" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762736286994" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.759975037447" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762736286994" data-turbo-eval="false" defer></script>
     <link href="../../resources/css/katex.css?v=3.5.0" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="../../resources/js/katex.js?v=3.5.0" defer></script>
 
@@ -226,14 +226,19 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>All settings are only available to Bot Admins.</p>
+            <h5>Note</h5>
+<ol>
+<li>All settings are only available to Bot Admins.</li>
+<li>All settings are enabled/disabled for all queues on the server.
+For example, if queue auto clear is set to 30 minutes, then ALL queues on the server will clear 30 minutes after they close.</li>
+</ol>
         </div>
     </div>
 </div>
 <doc-anchor-target id="server-roles">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#server-roles">#</doc-anchor-trigger>
-        <span>Server Roles</span>
+        <span><span class="docs-emoji">&#x1F4DD;</span> Server Roles</span>
     </h2>
 </doc-anchor-target>
 <p>YABOB needs to know which roles to interpret at <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
@@ -298,7 +303,7 @@
 <doc-anchor-target id="queue-auto-clear">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#queue-auto-clear">#</doc-anchor-trigger>
-        <span>Queue Auto Clear</span>
+        <span><span class="docs-emoji">&#x23F3;</span> Queue Auto Clear</span>
     </h2>
 </doc-anchor-target>
 <p>This setting controls whether the queues will automatically clear themselves after closing.</p>
@@ -320,10 +325,10 @@
 </figure>
 </p>
 <hr>
-<doc-anchor-target id="logging-channel">
+<doc-anchor-target id="-logging-channel">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#logging-channel">#</doc-anchor-trigger>
-        <span>Logging Channel</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-logging-channel">#</doc-anchor-trigger>
+        <span>🪵 Logging Channel</span>
     </h2>
 </doc-anchor-target>
 <p>This setting controls which channel should YABOB send logging messages to. The logs will look like the following:</p>
@@ -336,7 +341,7 @@
 <doc-anchor-target id="after-session-message">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#after-session-message">#</doc-anchor-trigger>
-        <span>After Session Message</span>
+        <span><span class="docs-emoji">&#x1F4E8;</span> After Session Message</span>
     </h2>
 </doc-anchor-target>
 <p>Sometimes it could be useful to automatically send a message to the students after they finish receiving help, such as asking for feedbacks. Here&#x27;s an example message:</p>
@@ -356,15 +361,33 @@
 <doc-anchor-target id="auto-give-student-role">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#auto-give-student-role">#</doc-anchor-trigger>
-        <span>Auto Give Student Role</span>
+        <span><span class="docs-emoji">&#x1F393;</span> Auto Give Student Role</span>
     </h2>
 </doc-anchor-target>
-<p>Manually assigning the student role to new members could be tedious. This setting configures whether YABOB should automatically give the student role to new members.</p>
+<p>Manually assigning the student role to new members could be tedious. This setting configures whether YABOB should automatically give the student role to new members when they join the server.</p>
+<doc-anchor-target id="enable">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enable">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F518;</span> Enable</span>
+    </h3>
+</doc-anchor-target>
+<p>YABOB will automatically give new members the <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Student</span>
+</span> role as soon as they join the server. You can always check which role is <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Student</span>
+</span> on your server by going to the <doc-anchor-trigger to="#server-roles">Server Roles</doc-anchor-trigger> setting.</p>
+<doc-anchor-target id="disable">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#disable">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F518;</span> Disable</span>
+    </h3>
+</doc-anchor-target>
+<p>YABOB will not add roles to new members.</p>
 <hr>
 <doc-anchor-target id="calendar-settings">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#calendar-settings">#</doc-anchor-trigger>
-        <span>Calendar Settings</span>
+        <span><span class="docs-emoji">&#x1F4C5;</span> Calendar Settings</span>
     </h2>
 </doc-anchor-target>
 <p>Changes the calendar this server reads from for office hour events.</p>
@@ -374,45 +397,69 @@
         <span><span class="docs-emoji">&#x1F518;</span> Change Calendar Settings</span>
     </h3>
 </doc-anchor-target>
-<p>Once clicked, a form will pop up asking for a calendar id and an optional public embed URL.</p>
+<p>Once clicked, a form will pop up asking for a calendar ID and an optional public embed URL.</p>
 <doc-anchor-target id="how-to-find-this-calendar-id">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-find-this-calendar-id">#</doc-anchor-trigger>
-        <span>How to find this calendar id</span>
+        <span>How to find this calendar ID</span>
     </h4>
 </doc-anchor-target>
 <ol>
 <li><p>Open Google Calendar, click the 3 dots on the calendar that you want to use <span class="math">\to</span> click <code v-pre>Settings and Sharing</code>.</p>
 </li>
-<li><p>Click <code v-pre>Make available to public</code>
-<img src="https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png" alt="" /></p>
+<li><p>Click <code v-pre>Make available to public</code></p>
+<p><img src="https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png" alt="" /></p>
 </li>
-<li><p>Scroll down to <code v-pre>Integrate Calendar</code> and copy the string under <code v-pre>Calendar ID</code>. This is the id string of your calendar
-<img src="https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png" alt="" /></p>
+<li><p>Scroll down to <code v-pre>Integrate Calendar</code> and copy the string under <code v-pre>Calendar ID</code>. This is the id string of your calendar</p>
+<p><img src="https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png" alt="" /></p>
+</li>
+<li><p>Fill the calendar id field with this id.</p>
 </li>
 </ol>
-<p>Fill the calendar id field with this id.</p>
-<p>If you wish to have a different calendar website than the default google calendar embed, fill in the public embed URL as well (URL must be complete, i.e include https). Otherwise leave the field empty.</p>
+<p>If the public embed url is unspecified, the <code v-pre>[Full Calendar]</code> button in all the <code v-pre>#queue</code> channels will take users to the default google calendar embed, which looks like the following:</p>
+<p><figure class="content-center">
+    <img src="../../static/default-calendar.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>If you wish to have a different calendar website than the default google calendar embed, fill in the public embed URL as well (URL must be <strong>complete</strong>, i.e include https).</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>YABOB cannot check if this URL is safe for users to click on, so it is the server owner&#x27;s responsibility to ensure the link is safe.</p>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="help-topic-prompt">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#help-topic-prompt">#</doc-anchor-trigger>
-        <span>Help Topic Prompt</span>
+        <span><span class="docs-emoji">&#x1F64B;</span> Help Topic Prompt</span>
     </h2>
 </doc-anchor-target>
-<p>Controls whether to show students a modal asking for a help topic.</p>
+<p>Controls whether to show students a modal asking for a help topic. This is useful if helpers wishes to know what the students in the queue need help with before they join the voice channel.</p>
 <doc-anchor-target id="enable">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#enable">#</doc-anchor-trigger>
         <span><span class="docs-emoji">&#x1F518;</span> Enable</span>
     </h3>
 </doc-anchor-target>
-<p>YABOB will start showing students a modal that asks them what topic do they need help with. Students are not required to submit the modal, and they will still be queued if they don&#x27;t submit.</p>
-<ul>
-<li><p>This modal is shown when the student uses <code v-pre>/enqueue</code> or <code v-pre>[Join]</code></p>
-<p><img src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png" alt="" /></p>
-</li>
-</ul>
+<p>YABOB will start showing students a modal that asks them what topic do they need help with. <strong>Students are not required to submit the modal (they can dismiss it by closing it or clicking Dismiss)</strong>, and they will still be queued if they don&#x27;t submit.</p>
+<p>This modal is shown when the student uses <code v-pre>/enqueue</code> or click <code v-pre>[Join]</code>.</p>
+<p><figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>Once the student submits this modal, all helpers of this queue will see:</p>
 <p><figure class="content-center">
     <img src="https://user-images.githubusercontent.com/60045212/211227887-0e9f0e6f-0a52-4220-a7a2-4a75a06c0907.png" alt="">
@@ -430,7 +477,7 @@
 <doc-anchor-target id="serious-mode">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#serious-mode">#</doc-anchor-trigger>
-        <span>Serious Mode</span>
+        <span><span class="docs-emoji">&#x1F9D0;</span> Serious Mode</span>
     </h2>
 </doc-anchor-target>
 <p>Controls whether to show &quot;fun stuff&quot; like emojis in queue channels.</p>
@@ -462,7 +509,7 @@
 <doc-anchor-target id="google-sheet-settings">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#google-sheet-settings">#</doc-anchor-trigger>
-        <span>Google Sheet Settings</span>
+        <span><span class="docs-emoji">&#x1F4CA;</span> Google Sheet Settings</span>
     </h2>
 </doc-anchor-target>
 <p>Controls which Google Sheet this server will be used for logging.</p>
@@ -495,7 +542,7 @@
         <span>Before you click submit</span>
     </h4>
 </doc-anchor-target>
-<p>Make sure the google sheet is shared with the YABOB in your server and YABOB has EDIT permission. You can find YABOB&#x27;s email in the google sheet settings menu.</p>
+<p>Make sure the google sheet is shared with the YABOB in your server and YABOB has <strong>EDIT</strong> permission. You can find YABOB&#x27;s email in the google sheet settings menu.</p>
 <p>You can always revoke the permission by removing yabob from the list of accounts with access or reset to the default google sheet.</p>
 <doc-tabs>
 <doc-tab v-cloak id="throws">
