@@ -14,11 +14,13 @@ Starting with version 4.3, YABOB will post a `/settings` command to your sever a
 - [Calendar Settings](#calendar-settings): Which calendar should YABOB read from for the Upcoming Sessions Embed
 - [Google Sheet Settings](#google-sheet-settings): Which google sheet should YABOB write attendance logs to
 
-!!!danger
-All settings are only available to Bot Admins.
+!!!danger Note
+1. All settings are only available to Bot Admins. 
+2. All settings are enabled/disabled for all queues on the server.
+   For example, if queue auto clear is set to 30 minutes, then ALL queues on the server will clear 30 minutes after they close.
 !!!
 
-## Server Roles
+## 📝 Server Roles
 
 YABOB needs to know which roles to interpret at [!badge variant="danger" text="Bot Admin"], [!badge variant="warning" text="Staff"], and [!badge variant="success" text="Student"] to enforce the access levels of all the commands. This setting controls which role will be used. We recommend using either one of the "Use Existing Roles" option.
 
@@ -48,7 +50,7 @@ For more granular control, use the [`/set_roles`](/user-docs/built-in-commands.m
 
 ---
 
-## Queue Auto Clear
+## ⏳ Queue Auto Clear
 
 This setting controls whether the queues will automatically clear themselves after closing.
 
@@ -65,7 +67,7 @@ Queue channels will also display the timer:
 
 ---
 
-## Logging Channel
+## 🪵 Logging Channel
 
 This setting controls which channel should YABOB send logging messages to. The logs will look like the following:
 
@@ -73,7 +75,7 @@ This setting controls which channel should YABOB send logging messages to. The l
 
 All command usages, button presses, and errors will be sent to this channel.
 
-## After Session Message
+## 📨 After Session Message
 
 Sometimes it could be useful to automatically send a message to the students after they finish receiving help, such as asking for feedbacks. Here's an example message:
 
@@ -85,47 +87,65 @@ Use the modal to input the after session message. All discord markdown syntax is
 
 ---
 
-## Auto Give Student Role
+## 🎓 Auto Give Student Role
 
-Manually assigning the student role to new members could be tedious. This setting configures whether YABOB should automatically give the student role to new members.
+Manually assigning the student role to new members could be tedious. This setting configures whether YABOB should automatically give the student role to new members when they join the server.
+
+### 🔘 Enable
+
+YABOB will automatically give new members the [!badge variant="success" text="Student"] role as soon as they join the server. You can always check which role is [!badge variant="success" text="Student"] on your server by going to the [Server Roles](#server-roles) setting.
+
+### 🔘 Disable
+
+YABOB will not add roles to new members.
 
 ---
 
-## Calendar Settings
+## 📅 Calendar Settings
 
 Changes the calendar this server reads from for office hour events.
 
 ### 🔘 Change Calendar Settings
 
-Once clicked, a form will pop up asking for a calendar id and an optional public embed URL.
+Once clicked, a form will pop up asking for a calendar ID and an optional public embed URL.
 
-#### How to find this calendar id
+#### How to find this calendar ID
 
 1. Open Google Calendar, click the 3 dots on the calendar that you want to use $\to$ click `Settings and Sharing`.
 
 2. Click `Make available to public`
+    
     ![](https://user-images.githubusercontent.com/60045212/211473315-7196c6f0-4cbd-40bc-92d5-f69e82f8476d.png)
 
 3. Scroll down to `Integrate Calendar` and copy the string under `Calendar ID`. This is the id string of your calendar
+    
     ![](https://user-images.githubusercontent.com/60045212/211473831-ca1c94a4-87b6-4f80-88f8-d6aa790eff40.png)
 
-Fill the calendar id field with this id.
+4. Fill the calendar id field with this id.
 
-If you wish to have a different calendar website than the default google calendar embed, fill in the public embed URL as well (URL must be complete, i.e include https). Otherwise leave the field empty.
+If the public embed url is unspecified, the `[Full Calendar]` button in all the `#queue` channels will take users to the default google calendar embed, which looks like the following:
+
+![](/static/default-calendar.png)
+
+If you wish to have a different calendar website than the default google calendar embed, fill in the public embed URL as well (URL must be **complete**, i.e include https).
+
+!!!warning
+YABOB cannot check if this URL is safe for users to click on, so it is the server owner's responsibility to ensure the link is safe.
+!!!
 
 ---
 
-## Help Topic Prompt
+## 🙋 Help Topic Prompt
 
-Controls whether to show students a modal asking for a help topic.
+Controls whether to show students a modal asking for a help topic. This is useful if helpers wishes to know what the students in the queue need help with before they join the voice channel.
 
 ### 🔘 Enable
 
-YABOB will start showing students a modal that asks them what topic do they need help with. Students are not required to submit the modal, and they will still be queued if they don't submit.
+YABOB will start showing students a modal that asks them what topic do they need help with. **Students are not required to submit the modal (they can dismiss it by closing it or clicking Dismiss)**, and they will still be queued if they don't submit.
 
-- This modal is shown when the student uses `/enqueue` or `[Join]`
+This modal is shown when the student uses `/enqueue` or click `[Join]`.
 
-    ![](https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png)
+![](https://user-images.githubusercontent.com/60045212/211227818-bbeed230-c9bc-439a-8a31-f72d2c9498de.png)
 
 Once the student submits this modal, all helpers of this queue will see:
 
@@ -137,7 +157,7 @@ YABOB will not show students the Help Topic modal. Students will be directly enq
 
 ---
 
-## Serious Mode
+## 🧐 Serious Mode
 
 Controls whether to show "fun stuff" like emojis in queue channels.
 
@@ -155,7 +175,7 @@ Enables all emotions and the hidden cat from the queues
 
 ---
 
-## Google Sheet Settings
+## 📊 Google Sheet Settings
 
 Controls which Google Sheet this server will be used for logging.
 
@@ -177,7 +197,7 @@ The string after `d/` and before `/edit` is your google sheet id.
 
 #### Before you click submit
 
-Make sure the google sheet is shared with the YABOB in your server and YABOB has EDIT permission. You can find YABOB's email in the google sheet settings menu.
+Make sure the google sheet is shared with the YABOB in your server and YABOB has **EDIT** permission. You can find YABOB's email in the google sheet settings menu.
 
 You can always revoke the permission by removing yabob from the list of accounts with access or reset to the default google sheet.
 
