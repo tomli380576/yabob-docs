@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/yabob-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799906425414">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.799909750044">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.8.1.799906425414" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.8.1.799909750044" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.8.1.799906425414" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.8.1.799909750044" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.8.1.799906425414" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.8.1.799909750044" data-turbo-eval="false" defer></script>
     <link href="../../resources/css/katex.css?v=3.8.1" rel="stylesheet">
     <script id="katex-js" data-cfasync="false" src="../../resources/js/katex.js?v=3.8.1" defer></script>
 
@@ -245,7 +245,7 @@
     </h2>
 </doc-anchor-target>
 <ol>
-<li><p>Create a discord server</p>
+<li><p>Create a discord server. All the folling steps will assume that you are the owner of this server.</p>
 </li>
 <li><p>Use the <a href="https://discord.com/oauth2/authorize?client_id=967586305959657482&amp;permissions=8&amp;scope=bot">invite link</a> to invite YABOB to your server</p>
 </li>
@@ -255,14 +255,16 @@
 <p>Now YABOB will send you another direct message saying that it has gotten the highest role and is initializing for your server.</p>
 <p><img src="https://user-images.githubusercontent.com/60045212/211128723-c208ccf5-76f3-4620-ab22-b44d1cae996d.png" alt="" /></p>
 </li>
-<li><p>YABOB will now ask you to set up the access level roles for your server. If you don&#x27;t have any roles in the server, you can use either the <code v-pre>[Create New Roles]</code> or <code v-pre>[Create New Roles (@everyone is student)]</code> option for quick setup. You can see the full documentation <a href="../settings/#server-roles">here</a>.</p>
+<li><p>YABOB will now ask you to set up the access level roles for your server. If you don&#x27;t have any roles in the server, you can use either the <code v-pre>[Create New Roles]</code> or <code v-pre>[Create New Roles (@everyone is student)]</code> option for quick setup. You can see the full documentation <a href="../settings/#server-roles">here</a> to see what each option does.</p>
 <p><img src="https://user-images.githubusercontent.com/60045212/211129036-5946fe37-5cf6-41f2-a4e7-a0ef845dd6ea.png" alt="" /></p>
 <p>After you make a choice, YABOB will save your settings and update the message:</p>
 <p><img src="https://user-images.githubusercontent.com/60045212/211128775-4faa109b-fddd-4a30-a688-2c9bd09a43bb.png" alt="" /></p>
 </li>
-<li><p>Now you are ready to create queues! In your server, use <a href="../built-in-commands/#queue"><code v-pre>/queue add</code></a> to create some new queues.</p>
+<li><p>Now you are ready to create queues! In your server, use <a href="../built-in-commands/#queue"><code v-pre>/queue add</code></a> to create some new queues. After the command finishes, a new role is created for each new queue.</p>
 </li>
-<li><p>(Optional) You can batch create office hour voice channels easily with <a href="../built-in-commands/#create_offices"><code v-pre>/create_offices</code></a>. YABOB will configure the voice channel permissions for you based on the roles you selected in step 4.</p>
+<li><p>Give yourself some of the the newly created queue roles (for example if the queue is called &quot;Class A&quot;, the role is also called &quot;Class A&quot;) and use <a href="../built-in-commands/#start"><code v-pre>/start</code></a> to open these queues.</p>
+</li>
+<li><p>(Optional) You can easily batch create office hour voice channels with <a href="../built-in-commands/#create_offices"><code v-pre>/create_offices</code></a>. YABOB will configure the voice channel permissions for you based on the roles you selected in step 4.</p>
 </li>
 <li><p>(Optional) You can further configure YABOB settings with the <code v-pre>/settings</code> command. Learn more about YABOB settings <a href="../settings/">here</a>.</p>
 </li>
